@@ -143,8 +143,8 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 5rem 0;
 }
 
-.section--about { background: var(--color-surface); }
 .section--services { background: var(--color-bg); }
+.section--about { background: var(--color-bg); }
 .section--coverage { background: var(--color-surface); }
 .section--contact {
   background: linear-gradient(180deg, #1a1a1a 0%, #0e0e0e 100%);
