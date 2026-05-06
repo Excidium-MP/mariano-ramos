@@ -16,9 +16,20 @@ Reemplazá el archivo en `assets/mariano.jpg` (mismo nombre, formato JPG). Ideal
 ### 2. Imagen de fondo del banner (hero)
 Reemplazá `assets/hero-bg.jpg` (mismo nombre). Conviene que sea horizontal, de alta resolución (ej. 1920×1080) y con un sujeto centrado o despejado, porque arriba va texto blanco.
 
-> Si todavía no tenés ninguna foto, el sitio igual se ve bien: el banner usa un degradado oscuro de fondo y la zona de la foto un degradado terroso.
+> La imagen actual es de **Fer Troulik** vía Unsplash (licencia Unsplash, uso comercial libre).
 
-### 3. Redes sociales
+### 3. Marcas con las que trabaja
+Los logos viven en `assets/brands/` y se muestran en una franja animada (marquee) entre Servicios y Zona.
+
+Para agregar / sacar / reemplazar marcas:
+
+1. Dejá el archivo del logo en `assets/brands/` (PNG con fondo transparente o SVG).
+2. En `index.html`, buscá `<ul class="marquee__list">` (aparece dos veces — son dos copias para el loop infinito; **editá las dos**).
+3. Agregá / quitá la línea correspondiente: `<li><img src="assets/brands/MARCA.svg" alt="Nombre" /></li>`.
+
+Los logos se renderizan en escala de grises por defecto y vuelven a color al pasar el mouse.
+
+### 4. Redes sociales
 En `index.html`, buscá el bloque `<ul class="socials">`. Hay tres `<a>` con `class="social hidden"` para Instagram, Facebook y TikTok.
 
 Para activar una red:
@@ -27,7 +38,7 @@ Para activar una red:
 
 Si Mariano no tiene una de las redes, dejala con `hidden` y no se va a mostrar.
 
-### 4. WhatsApp
+### 5. WhatsApp
 Ya está cargado: **+54 9 11 2454-9817**. Si cambia, buscá `5491124549817` en `index.html` (aparece 3 veces: dos botones y el botón flotante) y reemplazalo. Formato: código país + área + número, sin `+`, sin espacios, sin guiones.
 
 ## Cómo publicarlo (gratis)
@@ -64,8 +75,9 @@ mariano-ramos/
 ├── script.js          scroll suave
 ├── assets/
 │   ├── favicon.svg    icono de pestaña (monograma "MR")
-│   ├── hero-bg.jpg    PENDIENTE — fondo del banner
-│   └── mariano.jpg    PENDIENTE — foto de Mariano
+│   ├── hero-bg.jpg    fondo del banner (foto de Fer Troulik / Unsplash)
+│   ├── mariano.jpg    PENDIENTE — foto de Mariano (4:5 idealmente)
+│   └── brands/        logos de las marcas que aparecen en el marquee
 └── README.md          este archivo
 ```
 
